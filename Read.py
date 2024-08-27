@@ -7,7 +7,7 @@ def read_recipes(file_path):
                 break
             ingredient_count = int(file.readline().strip())
             ingredients = []
-            for _ in range(ingredient_count):
+            for i in range(ingredient_count):
                 ingredient = file.readline().strip().split(' | ')
                 ingredient_name = ingredient[0]
                 quantity = int(ingredient[1])
